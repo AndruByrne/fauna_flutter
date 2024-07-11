@@ -1,0 +1,19 @@
+# Run with `dart run ffigen --config ffigen.yaml`.
+name: FaunaFlutterBindings
+description: |
+  Bindings for `src/fauna_flutter.h`.
+
+  Regenerate bindings with `dart run ffigen --config ffigen.yaml`.
+output: 'lib/fauna_flutter_bindings_generated.dart'
+headers:
+  entry-points:
+    - 'src/fauna_flutter.h'
+  include-directives:
+    - 'src/fauna_flutter.h'
+preamble: |
+  // ignore_for_file: always_specify_types
+  // ignore_for_file: camel_case_types
+  // ignore_for_file: non_constant_identifier_names
+comments:
+  style: any
+  length: full
