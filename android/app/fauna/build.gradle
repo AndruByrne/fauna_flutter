@@ -1,0 +1,3 @@
+group = "com.pachakutech.fauna_flutter"
+configurations.maybeCreate("fauna")
+artifacts.add("default", file("fauna.aar"))
